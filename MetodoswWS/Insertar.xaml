@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MetodoswWS.Insertar"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2193f3">
+                <Label>Ventana de registro</Label>
+            </Frame>
+            <Entry x:Name="txtCodigo" Placeholder="Ingrese codigo" Keyboard="Numeric"></Entry>
+            <Entry x:Name="txtNombre" Placeholder="Ingrese Nombre" ></Entry>
+            <Entry x:Name="txtApellido" Placeholder="Ingrese Apellido" ></Entry>
+            <Entry x:Name="txtEdad" Placeholder="Ingrese Edad" Keyboard="Numeric"></Entry>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition>
+
+                    </ColumnDefinition>
+                    <ColumnDefinition>
+
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnInsertar" Text="Insertar" Clicked="btnInsertar_Clicked"></Button>
+                <Button x:Name="btnRegresar" Text="Gresar" Grid.Column="1" Clicked="btnRegresar_Clicked"></Button>
+                <Button x:Name="btnActualizar" Text="Actualizar" Clicked="btnActualizar_Clicked"></Button>
+
+                <Button x:Name="btnEliminar" Text="Eliminar" Grid.Column="1" Clicked="btnEliminar_Clicked"></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
